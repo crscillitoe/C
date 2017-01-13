@@ -8,6 +8,6 @@ function! DoEverything(message)
   python3 import vim
   python3 var = (vim.eval("a:message"))
   python3 os.system("i3-msg -q focus right")
-  python3 os.system("java -jar Type.jar " + var)
+  python3 os.system("java -jar /home/christian/Hackathon/plugin/Type.jar " + var)
   python3 os.system("i3-msg -q focus left")
 endfunc
